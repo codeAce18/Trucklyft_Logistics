@@ -2,15 +2,60 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const thicccboiBlack = localFont({
+  src: "../public/fonts/THICCCBOI-Black.ttf",
+  display: "swap",
+  weight: "900",
+  variable: "--font-thicccboi-black",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const thicccboiBold = localFont({
+  src: "../public/fonts/THICCCBOI-Bold.ttf",
+  display: "swap",
+  weight: "700",
+  variable: "--font-thicccboi-bold",
+});
+
+const thicccboiExtraBold = localFont({
+  src: "../public/fonts/THICCCBOI-ExtraBold.ttf",
+  display: "swap",
+  weight: "800",
+  variable: "--font-thicccboi-extra-bold",
+});
+
+const thicccboiLight = localFont({
+  src: "../public/fonts/THICCCBOI-Light.ttf",
+  display: "swap",
+  weight: "300",
+  variable: "--font-thicccboi-light",
+});
+
+const thicccboiMedium = localFont({
+  src: "../public/fonts/THICCCBOI-Medium.ttf",
+  display: "swap",
+  weight: "500",
+  variable: "--font-thicccboi-medium",
+});
+
+const thicccboiRegular = localFont({
+  src: "../public/fonts/THICCCBOI-Regular.ttf",
+  display: "swap",
+  weight: "400",
+  variable: "--font-thicccboi-regular",
+});
+
+const thicccboiSemiBold = localFont({
+  src: "../public/fonts/THICCCBOI-SemiBold.ttf",
+  display: "swap",
+  weight: "600",
+  variable: "--font-thicccboi-semi-bold",
+});
+
+const thicccboiThin = localFont({
+  src: "../public/fonts/THICCCBOI-Thin.ttf",
+  display: "swap",
+  weight: "200",
+  variable: "--font-thicccboi-thin",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${thicccboiBlack.variable} ${thicccboiBold.variable} ${thicccboiExtraBold.variable} ${thicccboiLight.variable} ${thicccboiMedium.variable} ${thicccboiRegular.variable} ${thicccboiSemiBold.variable} ${thicccboiThin.variable}`}>
+      <body>
         {children}
       </body>
     </html>
