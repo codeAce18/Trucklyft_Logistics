@@ -17,8 +17,8 @@ import CancelledTendersIcon from "../../public/assets/CancelledTendersIcon.svg"
 const DashboardContent = () => {
     return (
         <div>
-            {/* Dashboard Header */}
-            <div className="bg-[#FFFFFF] border-b-[1px] border-b-[#E6E5E766]  h-[64px] w-full">
+            {/* Dashboard Header for Dashboard*/}
+            <div className="bg-[#FFFFFF]  border-b-[#E6E5E766]  h-[64px] w-full ">
                 <div className='flex items-center justify-end gap-x-6 mr-10 mt-[32px]'>
                     <div className='cursor-pointer'>
                         <Image
@@ -52,35 +52,44 @@ const DashboardContent = () => {
 
 
                 <div className='pt-16'>
-                    <div className='flex items-center justify-between'>
-                        <div className='flex items-center gap-16 rounded-[8px] justify-center w-[265px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
+                    <div className='flex items-center gap-[8px]'>
+                        <div className='flex items-center gap-12 rounded-[8px] justify-center w-[245px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
                             <div>
                                 <p className='text-[#6B6774] text-[14px] leading-[17px] font-ThicccboiSemiBold'>Total Tenders</p>
                                 <h1 className='pt-6 text-[#090318] text-[32px] leading-[38px] font-ThicccboiExtraBold'>102</h1>
                             </div>
                             <Image src={TotalTendersIcon} alt='TotalTendersIcon' />
                         </div>
-                        <div className='flex items-center gap-16 rounded-[8px] justify-center w-[265px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
+                        <div className='flex items-center gap-12 rounded-[8px] justify-center w-[245px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
                             <div>
                                 <p className='text-[#6B6774] text-[14px] leading-[17px] font-ThicccboiSemiBold'>Pending Tenders</p>
                                 <h1 className='pt-6 text-[#090318] text-[32px] leading-[38px] font-ThicccboiExtraBold'>3</h1>
                             </div>
                             <Image src={PendingTendersIcon} alt='PendingTendersIcon' />
                         </div>
-                        <div className='flex items-center gap-16 rounded-[8px] justify-center w-[265px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
+                        <div className='flex items-center gap-12 rounded-[8px] justify-center w-[245px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
                             <div>
                                 <p className='text-[#6B6774] text-[14px] leading-[17px] font-ThicccboiSemiBold'>Delivered Tenders</p>
                                 <h1 className='pt-6 text-[#090318] text-[32px] leading-[38px] font-ThicccboiExtraBold'>98</h1>
                             </div>
                             <Image src={DeliveredTendersIcon} alt='DeliveredTendersIcon' />
                         </div>
-                        <div className='flex items-center gap-16 rounded-[8px] justify-center w-[265px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
+                        <div className='flex items-center gap-12 rounded-[8px] justify-center w-[245px] bg-[#FFFFFF] border-[1px] border-[#E6E5E766] h-[135px]'>
                             <div>
                                 <p className='text-[#6B6774] text-[14px] leading-[17px] font-ThicccboiSemiBold'>Cancelled Tenders</p>
                                 <h1 className='pt-6 text-[#090318] text-[32px] leading-[38px] font-ThicccboiExtraBold'>1</h1>
                             </div>
                             <Image src={CancelledTendersIcon} alt='CancelledTendersIcon' />
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <div className='px-10 pt-16'>
+                        <h1  className='text-[#090318] text-[28px] leading-[34px] font-ThicccboiExtraBold'>Recent Tenders</h1>
                     </div>
                 </div>
             </div>
